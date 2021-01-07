@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公開匿名聊天室</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCzCjB6QZqhMJgmvSlkKcCNZHQp0hG6ynw",
+    authDomain: "vbnetdatabase.firebaseapp.com",
+    databaseURL: "https://vbnetdatabase-default-rtdb.firebaseio.com",
+    projectId: "vbnetdatabase",
+    storageBucket: "vbnetdatabase.appspot.com",
+    messagingSenderId: "545879978490",
+    appId: "1:545879978490:web:f0df8c5db5aad810da7443",
+    measurementId: "G-264E3TMDFS"
+  };
+  // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+<section class="msger">
+    <header class="msger-header">
+        <div></div><div></div><div></div><div></div>
+        <div class="msger-header-title">
+            <i class="fas fa-comment-alt"></i> Chat with Meme
+        </div>
+        <div class="msger-header-options">
+            <span><i class="fas fa-cog"></i></span>
+        </div>
+        <div class="btn-container">
+            <a  href="https://drive.google.com/uc?id=1Ux7ZWuZu3ojAgL53x-Uzi39gJsdIqCz2&export=download" download="OpenPict.exe" type="button" class="tooltip" title="Download MEME">Make Your MEME Now！  </a>
+        </div>
+    </header>
+    <!--聊天 block-->
+    <div class="msger-chat">
+
+    </div>
+    <!--聊天 block-->
+
+    <div class="msger-inputarea">
+        <button type="button" id="pic" class="msger-pic-btn" onclick= "window.open('pic.html', '_blank',config='height=500,width=800')">梗圖</button>
+        <input type="text" class="msger-input" id="msg" placeholder="說些什麼吧～">
+        <button type="button" id="send" class="msger-send-btn">發送訊息</button>
+    </div>
+</section>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
